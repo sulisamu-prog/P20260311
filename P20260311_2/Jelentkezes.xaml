@@ -14,14 +14,34 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition Height="150"/>
+            <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="70"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="70"/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
 
+        <Label Content="Új tanuló regisztálás:" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Content="Név:" Grid.Row="2" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="Ágazat:" Grid.Row="3" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="Szül.:" Grid.Row="4" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="Lakcím:" Grid.Row="5" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="Nem:" Grid.Row="6" Grid.Column="1" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBox x:Name="nev" Grid.Row="2" Grid.Column="2" Width="110" Height="25" VerticalAlignment="Center"/>
+        <ComboBox x:Name="agazat" Grid.Row="3" Grid.Column="2" Width="110" Height="25">
+            <ComboBoxItem x:Name="infoTag" Content="Informatika"></ComboBoxItem>
+            <ComboBoxItem x:Name="euTag" Content="Egészségügy"></ComboBoxItem>
+            <ComboBoxItem x:Name="pedTag" Content="Pedagógia"></ComboBoxItem>
+        </ComboBox>
+        <DatePicker x:Name="szuldate" Grid.Row="4" Grid.Column="2" Width="110" Height="25" VerticalAlignment="Center"/>
+        <TextBox x:Name="lakcim" Grid.Row="5" Grid.Column="2" Width="110" Height="25" VerticalAlignment="Center"/>
+        <RadioButton x:Name="ferfi" Grid.Row="6" Grid.Column="2" Width="110" Content="Férfi" Height="25" VerticalAlignment="Center"/>
+        <RadioButton x:Name="no" Margin="90 0 0 0" Grid.Row="6" Grid.Column="2" Width="110" Content="Nő" Height="25" VerticalAlignment="Center"/>
+
+        <Button x:Name="regisztrálás" Grid.Row="2" Grid.Column="3" Width="50" Content="Reg." Height="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
