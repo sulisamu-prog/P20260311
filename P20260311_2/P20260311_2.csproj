@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="naplo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="naplo.jpg" />
+  </ItemGroup>
+
 </Project>

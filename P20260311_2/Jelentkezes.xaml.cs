@@ -23,5 +23,11 @@ namespace P20260311_2
         {
             InitializeComponent();
         }
+
+        // List<Tanulo> list = new List<Tanulo>();
+        // Tanulo t = new Tanulo(0, "", "");
+        // t.Nev = nev.Text;
+        // t.Agazat = infoTag.Content.ToString();
+        // list.Add(t);
     }
 }

@@ -24,13 +24,8 @@ namespace P20260311_2
             InitializeComponent();
         }
 
-        private void regisztal_Click(object sender, RoutedEventArgs e)
+        private void jelentkez_Click(object sender, RoutedEventArgs e)
         {
-            List<Tanulo> list = new List<Tanulo>();
-            Tanulo t = new Tanulo(0, "", "");
-            t.Nev = nev.Text;
-            t.Agazat = infoTag.Content.ToString();
-            list.Add(t);
         }
     }
 }
